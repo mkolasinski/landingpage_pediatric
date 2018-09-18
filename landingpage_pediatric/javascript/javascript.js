@@ -1,20 +1,13 @@
 $(document).ready( function() {
 
-    // slide to convenient section
-    $('a[href^="#"]').on('click', function (event) {
+    var sharedMobile = $(document).width() > 426;
+    var sharedTablet = $(document).width() > 767;
 
-        var target = $($(this).attr('href'));
-
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 650);
-        }
-    });
-
-    $(".hamburger-menu").click( function() {
-        $(".mobile-menu").show();
-    });
+    if ( sharedMobile ) {
+        $(".fas.fa-bars").on("click", function() {
+            $(this).toggleClass("far fa-times-circle");
+            $(".mobile-menu").toggle();
+        });
+    }
 
 });
