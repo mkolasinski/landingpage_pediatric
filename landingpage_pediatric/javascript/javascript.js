@@ -1,13 +1,18 @@
 $(document).ready( function() {
 
-    var sharedMobile = $(document).width() > 426;
-    var sharedTablet = $(document).width() > 767;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 2 ) {
+          $(".navigation-top").addClass("navigation-top-scrolled");
+          $(".mobile-menu").addClass("mobile-menu-scrolled");
+        } else {
+          $(".navigation-top").removeClass("navigation-top-scrolled");
+          $(".mobile-menu").removeClass("mobile-menu-scrolled");
+        }
+      });
 
-    if ( sharedMobile ) {
-        $(".fas.fa-bars").on("click", function() {
-            $(this).toggleClass("far fa-times-circle");
-            $(".mobile-menu").toggle();
-        });
-    }
+    $(".fas.fa-bars").on("click", function() {
+        $(this).toggleClass("far fa-times-circle");
+        $(".mobile-menu").toggle();
+    });
 
 });
