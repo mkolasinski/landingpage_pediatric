@@ -48,14 +48,6 @@ body {
                 }
             }
     }
-    .photo1 {
-        background-image: url("../assets/photos/photo1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100%;
-    }
     .mobile-menu {
         display: none;
         margin: 0;
@@ -75,15 +67,43 @@ body {
     }
     .navigation-top-scrolled {
         position: fixed;
+        width: 100%;
     }
     .mobile-menu-scrolled {
         position: fixed;
         top: 50px;
         right: 0;
     }
-    .home-visit {
-        border:1px solid red;
-        height: 150vh;
+    .photo1 {
+        background-image: url("../assets/photos/photo1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: -500px;
+        height: 95vh;
+        resize: both;
+    }
+    .about-me {
+        div {
+            margin-top: 30px;
+            h2 {
+                text-align: center;
+                color: #0085ef;
+            }
+            .photo-me {
+                background-image: url("../assets/photos/my_photo.jpg");
+                background-size: 100%;
+                width: 225px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            p {
+                width: 80%;
+                margin: 25px auto;
+                text-align: justify;
+                font-size: 14px;
+            }
+        }
     }
 }
 
@@ -113,16 +133,17 @@ body {
             ul {
                 display: inline-flex;
                 list-style: none;
-                width: 75%;
+                width: 90%;
+                padding-left: 0;
+                margin: 13px 0;
                 li {
                     width: 100%;
-                    color: white;
                     cursor: pointer;
                 }
             }
         }
         .photo1 {
-            background-size: 100%;
+            background-position: center;
         }
     }
 }
@@ -131,12 +152,34 @@ body {
     body {
         margin: 0 auto;
         width: 1200px;
+        .navigation-top-scrolled,
+        .mobile-menu-scrolled {
+            width: 1200px;
+        }
         .photo1 {
             background-size: cover;
         }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 1290px;
+        .navigation-top-scrolled,
+        .mobile-menu-scrolled {
+            width: 1290px;
+        }
+    }
+}
+
+@media screen and (min-width: 1852px) {
+    body {
+        width: 1460px;
         .navigation-top-scrolled {
-            width: 1200px;
-            position: fixed;
+            width: 1460px;
+        }
+        .mobile-menu-scrolled {
+            width: 1460px;
         }
     }
 }
