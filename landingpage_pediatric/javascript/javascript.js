@@ -1,15 +1,8 @@
 $(document).ready( function() {
 
-    $('a[href^="#"]').on('click', function (event) {
-
-        var target = $($(this).attr('href'));
-
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 650);
-        }
+    $('#about_me').on('click', function (event) {
+            window.scrollTo(0,590);
+            $(".mobile-menu").hide();
     });
 
     $(window).scroll(function() {

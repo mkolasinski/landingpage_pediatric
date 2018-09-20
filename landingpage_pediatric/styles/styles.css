@@ -50,7 +50,7 @@ body .navigation-top div:not(:first-child) .hamburger-menu {
 }
 body .mobile-menu {
   display: none;
-  margin: 0;
+  margin: -2px 0 0;
   width: 80%;
   float: right;
   background-color: #00aeef;
@@ -59,8 +59,8 @@ body .mobile-menu ul {
   list-style: none;
 }
 body .mobile-menu ul li {
-  color: #FFF;
   height: 35px;
+  color: #FFF;
 }
 body .navigation-menu {
   display: none;
@@ -83,7 +83,7 @@ body .photo1 {
   height: 95vh;
   resize: both;
 }
-body .about-me div {
+body .about-me {
   margin-top: 30px;
 }
 body .about-me div h2 {
@@ -114,9 +114,11 @@ body .about-me div p {
   body .navigation-top div:not(:first-child) {
     display: none;
   }
-  body .mobile-menu {
-    display: none;
+  body .photo1 {
+    background-position: center;
   }
+}
+@media screen and (min-width: 767px) {
   body .navigation-menu {
     display: block;
     background-color: #0085ef;
@@ -135,8 +137,8 @@ body .about-me div p {
     width: 100%;
     cursor: pointer;
   }
-  body .photo1 {
-    background-position: center;
+  body .navigation-menu-scrolled {
+    position: fixed;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -144,8 +146,7 @@ body .about-me div p {
     margin: 0 auto;
     width: 1200px;
   }
-  body .navigation-top-scrolled,
-  body .mobile-menu-scrolled {
+  body .navigation-top-scrolled {
     width: 1200px;
   }
   body .photo1 {
@@ -156,8 +157,7 @@ body .about-me div p {
   body {
     width: 1290px;
   }
-  body .navigation-top-scrolled,
-  body .mobile-menu-scrolled {
+  body .navigation-top-scrolled {
     width: 1290px;
   }
 }
@@ -166,9 +166,6 @@ body .about-me div p {
     width: 1460px;
   }
   body .navigation-top-scrolled {
-    width: 1460px;
-  }
-  body .mobile-menu-scrolled {
     width: 1460px;
   }
 }

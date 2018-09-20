@@ -50,15 +50,15 @@ body {
     }
     .mobile-menu {
         display: none;
-        margin: 0;
+        margin: -2px 0 0;
         width: 80%;
         float: right;
         background-color: #00aeef;
         ul {
             list-style: none;
             li {
-                color: #FFF;
                 height: 35px;
+                color: #FFF;
             }
         }
     }
@@ -84,8 +84,8 @@ body {
         resize: both;
     }
     .about-me {
+        margin-top: 30px;
         div {
-            margin-top: 30px;
             h2 {
                 text-align: center;
                 color: #0085ef;
@@ -121,9 +121,14 @@ body {
                 display: none;
             }
         }
-        .mobile-menu {
-            display: none;
+        .photo1 {
+            background-position: center;
         }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
         .navigation-menu {
             display: block;
             background-color: #0085ef;
@@ -142,18 +147,16 @@ body {
                 }
             }
         }
-        .photo1 {
-            background-position: center;
+        .navigation-menu-scrolled {
+            position: fixed;
         }
     }
 }
-
 @media screen and (min-width: 1200px) {
     body {
         margin: 0 auto;
         width: 1200px;
-        .navigation-top-scrolled,
-        .mobile-menu-scrolled {
+        .navigation-top-scrolled {
             width: 1200px;
         }
         .photo1 {
@@ -165,8 +168,7 @@ body {
 @media screen and (min-width: 1440px) {
     body {
         width: 1290px;
-        .navigation-top-scrolled,
-        .mobile-menu-scrolled {
+        .navigation-top-scrolled {
             width: 1290px;
         }
     }
@@ -176,9 +178,6 @@ body {
     body {
         width: 1460px;
         .navigation-top-scrolled {
-            width: 1460px;
-        }
-        .mobile-menu-scrolled {
             width: 1460px;
         }
     }
