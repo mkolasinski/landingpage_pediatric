@@ -135,11 +135,12 @@ body .header {
   color: #0085ef;
 }
 body footer {
-  height: 50px;
+  height: 30px;
   color: white;
   background-color: #00aeef;
   text-align: center;
   padding-top: 12px;
+  font-size: 0.8em;
 }
 @media screen and (min-width: 426px) {
   body .navigation-top div:first-child {
