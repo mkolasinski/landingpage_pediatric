@@ -43,6 +43,7 @@ body .navigation-top div:not(:first-child) {
   text-align: center;
 }
 body .navigation-top div:not(:first-child) .hamburger-menu {
+  display: none;
   margin: 0;
   padding-top: 10px;
   font-size: 24px;
@@ -83,25 +84,62 @@ body .photo1 {
   height: 95vh;
   resize: both;
 }
-body .about-me {
+body .about-me,
+body .home_visit,
+body .services,
+body .contact {
   margin-top: 30px;
 }
-body .about-me div h2 {
-  text-align: center;
-  color: #0085ef;
-}
-body .about-me div .photo-me {
+body .about-me div .photo-me,
+body .home_visit div .photo-me,
+body .services div .photo-me,
+body .contact div .photo-me {
   background-image: url("../assets/photos/my_photo.jpg");
   background-size: 100%;
   width: 225px;
   height: 300px;
   margin: 0 auto;
 }
-body .about-me div p {
+body .about-me div p,
+body .home_visit div p,
+body .services div p,
+body .contact div p {
   width: 80%;
   margin: 25px auto;
   text-align: justify;
   font-size: 14px;
+}
+body .about-me div .contact_informations,
+body .home_visit div .contact_informations,
+body .services div .contact_informations,
+body .contact div .contact_informations {
+  text-align: center;
+}
+body .about-me div .contact_phone,
+body .home_visit div .contact_phone,
+body .services div .contact_phone,
+body .contact div .contact_phone {
+  text-align: center;
+  font-size: 24px;
+}
+body .about-me div .contact_phone a,
+body .home_visit div .contact_phone a,
+body .services div .contact_phone a,
+body .contact div .contact_phone a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+body .header {
+  text-align: center;
+  color: #0085ef;
+}
+body footer {
+  height: 50px;
+  color: white;
+  background-color: #00aeef;
+  text-align: center;
+  padding-top: 12px;
 }
 @media screen and (min-width: 426px) {
   body .navigation-top div:first-child {

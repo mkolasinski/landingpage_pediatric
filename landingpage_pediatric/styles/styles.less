@@ -41,6 +41,7 @@ body {
                 width: 20%;
                 text-align: center;
                 .hamburger-menu {
+                    display: none;
                     margin: 0;
                     padding-top: 10px;
                     font-size: 24px;
@@ -83,13 +84,12 @@ body {
         height: 95vh;
         resize: both;
     }
-    .about-me {
+    .about-me,
+    .home_visit,
+    .services,
+    .contact {
         margin-top: 30px;
         div {
-            h2 {
-                text-align: center;
-                color: #0085ef;
-            }
             .photo-me {
                 background-image: url("../assets/photos/my_photo.jpg");
                 background-size: 100%;
@@ -103,7 +103,30 @@ body {
                 text-align: justify;
                 font-size: 14px;
             }
+            .contact_informations {
+                text-align: center;
+            }
+            .contact_phone {
+                text-align: center;
+                font-size: 24px;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-weight: bold;
+                }
+            }
         }
+    }
+    .header {
+        text-align: center;
+        color: #0085ef;
+    }
+    footer {
+        height: 50px;
+        color: white;
+        background-color: #00aeef;
+        text-align: center;
+        padding-top: 12px;
     }
 }
 

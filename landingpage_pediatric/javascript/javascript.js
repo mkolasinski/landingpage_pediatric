@@ -1,8 +1,15 @@
 $(document).ready( function() {
 
-    $('#about_me').on('click', function (event) {
-            window.scrollTo(0,590);
-            $(".mobile-menu").hide();
+    $('#about_me').on('click', function() {
+        window.scrollTo(0,590);
+        $(".mobile-menu").hide();
+        $(".far.fa-times-circle").removeClass("far fa-times-circle");
+    });
+
+    $('#home_visit').on('click', function() {
+        window.scrollTo(0,900);
+        $(".mobile-menu").hide();
+        $(".far.fa-times-circle").removeClass("far fa-times-circle");
     });
 
     $(window).scroll(function() {
