@@ -50,17 +50,6 @@ body .photo1 {
   height: 95vh;
   resize: both;
 }
-body .fas.fa-arrow-alt-circle-up.fas.fa-arrow-alt-circle-up {
-  display: none;
-  bottom: 15px;
-  right: 15px;
-  color: #0085ef;
-  position: fixed;
-  z-index: 10;
-  opacity: .8;
-  font-size: 65px;
-  transition: all 0.5s ease-in-out;
-}
 body .about-me,
 body .home_visit,
 body .services,
@@ -148,26 +137,6 @@ body footer {
   }
   body .photo1 {
     background-position: center;
-  }
-}
-@media screen and (min-width: 767px) {
-  body .navigation-menu {
-    display: block;
-    background-color: #0085ef;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-  }
-  body .navigation-menu ul {
-    display: inline-flex;
-    list-style: none;
-    width: 90%;
-    padding-left: 0;
-    margin: 13px 0;
-  }
-  body .navigation-menu ul li {
-    width: 100%;
-    cursor: pointer;
   }
 }
 @media screen and (min-width: 1200px) {
