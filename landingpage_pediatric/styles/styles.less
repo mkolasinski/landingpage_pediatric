@@ -38,40 +38,29 @@ body {
                 }
             }
     }
-    .mobile-menu {
-        display: none;
-        margin: -2px 0 0;
-        width: 80%;
-        float: right;
-        background-color: #00aeef;
-        ul {
-            list-style: none;
-            li {
-                height: 35px;
-                color: #FFF;
-            }
-        }
-    }
-    .navigation-menu {
-        display: none;
-    }
     .navigation-top-scrolled {
         position: fixed;
         width: 100%;
-    }
-    .mobile-menu-scrolled {
-        position: fixed;
-        top: 50px;
-        right: 0;
     }
     .photo1 {
         background-image: url("../assets/photos/photo2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: -500px;
+        background-position: center;
         height: 95vh;
         resize: both;
+    }
+    .fas.fa-arrow-alt-circle-up.fas.fa-arrow-alt-circle-up {
+        display: none;
+        bottom: 15px;
+        right: 15px;
+        color: #0085ef;
+        position: fixed;
+        z-index: 10;
+        opacity: .8;
+        font-size: 65px;
+        transition: all 0.5s ease-in-out;
     }
     .about-me,
     .home_visit,
