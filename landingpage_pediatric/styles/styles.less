@@ -8,12 +8,12 @@ body {
         height: 50px;
         background-color: #00aeef;
         display: flex;
-            div:first-child {
-                width: 75%;
+            div {
                 text-align: center;
                 padding-top: 2px;
-                p, p:first-child {
-                    display: inline-block;
+                width: 100%;
+                p {
+                    display: block;
                     margin: 0;
                     color: #FFF;
                     font-size: 16px;
@@ -35,17 +35,6 @@ body {
                 }
                 .phone:active {
                     text-decoration: none;
-                }
-            }
-            div:not(:first-child) {
-                width: 20%;
-                text-align: center;
-                .hamburger-menu {
-                    display: none;
-                    margin: 0;
-                    padding-top: 10px;
-                    font-size: 24px;
-                    color: #FFF;
                 }
             }
     }
@@ -76,7 +65,7 @@ body {
         right: 0;
     }
     .photo1 {
-        background-image: url("../assets/photos/photo1.jpg");
+        background-image: url("../assets/photos/photo2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -95,13 +84,21 @@ body {
                 background-size: 100%;
                 width: 225px;
                 height: 300px;
-                margin: 0 auto;
+                margin: 20px auto;
             }
             p {
                 width: 80%;
                 margin: 25px auto;
                 text-align: justify;
                 font-size: 14px;
+            }
+            ul {
+                font-size: 14px;
+                width: 75%;
+                margin: 20px auto 0;
+                padding-left: 20px;
+                list-style-type: disc;
+                text-align: justify;
             }
             .contact_informations {
                 text-align: center;
@@ -120,6 +117,8 @@ body {
     .header {
         text-align: center;
         color: #0085ef;
+        margin: 0 auto;
+        width: 80%;
     }
     footer {
         height: 30px;
@@ -134,9 +133,12 @@ body {
 @media screen and (min-width: 426px) {
     body {
         .navigation-top {
-            div:first-child {
+            div {
                 padding-top: 12px;
                 width: 100%;
+                p {
+                    display: inline;
+                }
                 .phone {
                     margin-left: 30px;
                 }
@@ -170,9 +172,6 @@ body {
                     cursor: pointer;
                 }
             }
-        }
-        .navigation-menu-scrolled {
-            position: fixed;
         }
     }
 }

@@ -8,46 +8,34 @@ body .navigation-top {
   background-color: #00aeef;
   display: flex;
 }
-body .navigation-top div:first-child {
-  width: 75%;
+body .navigation-top div {
   text-align: center;
   padding-top: 2px;
+  width: 100%;
 }
-body .navigation-top div:first-child p,
-body .navigation-top div:first-child p:first-child {
-  display: inline-block;
+body .navigation-top div p {
+  display: block;
   margin: 0;
   color: #FFF;
   font-size: 16px;
 }
-body .navigation-top div:first-child .phone {
+body .navigation-top div .phone {
   font-weight: bold;
   padding-top: 2px;
 }
-body .navigation-top div:first-child .phone .fas.fa-phone {
+body .navigation-top div .phone .fas.fa-phone {
   padding-right: 10px;
   font-size: 14px;
 }
-body .navigation-top div:first-child .phone a {
+body .navigation-top div .phone a {
   text-decoration: none;
   color: #FFF;
 }
-body .navigation-top div:first-child .phone:hover {
+body .navigation-top div .phone:hover {
   text-decoration: underline;
 }
-body .navigation-top div:first-child .phone:active {
+body .navigation-top div .phone:active {
   text-decoration: none;
-}
-body .navigation-top div:not(:first-child) {
-  width: 20%;
-  text-align: center;
-}
-body .navigation-top div:not(:first-child) .hamburger-menu {
-  display: none;
-  margin: 0;
-  padding-top: 10px;
-  font-size: 24px;
-  color: #FFF;
 }
 body .mobile-menu {
   display: none;
@@ -76,7 +64,7 @@ body .mobile-menu-scrolled {
   right: 0;
 }
 body .photo1 {
-  background-image: url("../assets/photos/photo1.jpg");
+  background-image: url("../assets/photos/photo2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,7 +86,7 @@ body .contact div .photo-me {
   background-size: 100%;
   width: 225px;
   height: 300px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 body .about-me div p,
 body .home_visit div p,
@@ -108,6 +96,17 @@ body .contact div p {
   margin: 25px auto;
   text-align: justify;
   font-size: 14px;
+}
+body .about-me div ul,
+body .home_visit div ul,
+body .services div ul,
+body .contact div ul {
+  font-size: 14px;
+  width: 75%;
+  margin: 20px auto 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: justify;
 }
 body .about-me div .contact_informations,
 body .home_visit div .contact_informations,
@@ -133,6 +132,8 @@ body .contact div .contact_phone a {
 body .header {
   text-align: center;
   color: #0085ef;
+  margin: 0 auto;
+  width: 80%;
 }
 body footer {
   height: 30px;
@@ -143,11 +144,14 @@ body footer {
   font-size: 0.8em;
 }
 @media screen and (min-width: 426px) {
-  body .navigation-top div:first-child {
+  body .navigation-top div {
     padding-top: 12px;
     width: 100%;
   }
-  body .navigation-top div:first-child .phone {
+  body .navigation-top div p {
+    display: inline;
+  }
+  body .navigation-top div .phone {
     margin-left: 30px;
   }
   body .navigation-top div:not(:first-child) {
@@ -175,9 +179,6 @@ body footer {
   body .navigation-menu ul li {
     width: 100%;
     cursor: pointer;
-  }
-  body .navigation-menu-scrolled {
-    position: fixed;
   }
 }
 @media screen and (min-width: 1200px) {
