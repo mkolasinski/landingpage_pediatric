@@ -147,6 +147,9 @@ body footer {
   body .photo1 {
     background-position: center;
   }
+  body .services div ul {
+    padding-left: 35px;
+  }
 }
 @media screen and (min-width: 767px) {
   body .photo1 {
