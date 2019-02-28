@@ -9,32 +9,52 @@ body {
         background-color: #00aeef;
         display: flex;
             div {
-                text-align: center;
-                padding-top: 2px;
+                display: flex;
                 width: 100%;
-                p {
-                    display: block;
-                    margin: 0;
-                    color: #FFF;
-                    font-size: 16px;
-                }
-                .phone {
-                    font-weight: bold;
+                .main_description {
+                    text-align: center;
                     padding-top: 2px;
-                    .fas.fa-phone {
-                        padding-right: 10px;
-                        font-size: 14px;
+                    display: block;
+                    p {
+                        display: block;
+                        margin: 0;
+                        color: #FFF;
+                        font-size: 16px;
                     }
+                    .phone {
+                        font-weight: bold;
+                        padding-top: 2px;
+                        .fas.fa-phone {
+                            padding-right: 10px;
+                            font-size: 14px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #FFF;
+                        }
+                    }
+                    .phone:hover {
+                        text-decoration: underline;
+                    }
+                    .phone:active {
+                        text-decoration: none;
+                    }
+                }
+                ul {
+                    padding-left: 0;
+                    list-style: none;
+                    display: inline-flex;
+                    margin-top: 14px;
                     a {
                         text-decoration: none;
-                        color: #FFF;
+                        color: blue;
+                        font-size: 14px;
+                        font-weight: bold;
+                        li {
+                            height: 28px;
+                            margin: 0 5px;
+                        }
                     }
-                }
-                .phone:hover {
-                    text-decoration: underline;
-                }
-                .phone:active {
-                    text-decoration: none;
                 }
             }
     }
