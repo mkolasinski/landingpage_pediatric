@@ -10,7 +10,7 @@ body {
         display: flex;
             div {
                 display: flex;
-                width: 95%;
+                width: 100%;
                 .main_description {
                     text-align: center;
                     padding-top: 4px;
@@ -36,6 +36,7 @@ body {
                     }
                     .phone:hover {
                         text-decoration: underline;
+                        padding-bottom: 2px;
                     }
                     .phone:active {
                         text-decoration: none;
@@ -46,19 +47,53 @@ body {
                     list-style: none;
                     display: inline-flex;
                     margin-top: 14px;
-                    a {
-                        text-decoration: none;
-                        color: blue;
-                        font-size: 14px;
-                        font-weight: bold;
-                        li {
-                            height: 28px;
-                            margin: 0 5px;
-                        }
-                        li:hover {
+                    margin-right: 15px;
+                    li {
+                        display: inline-flex;
+                        a {
+                            display: inline-flex;
+                            text-decoration: none;
                             color: white;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                            span {
+                                font-size: 14px;
+                                padding-left: 5px;
+                            }
+                        }
+                        
+                        i {
+                            color: white;
+                            padding: 2px 0 0 8px;
+                        }
+                        .fas.fa-angle-up {
+                            display: none;
                         }
                     }
+                    .nsk {
+                        display: none;
+                        position: absolute;
+                        top: 40px;
+                        background-color: #00aeef;
+                        i {
+                            visibility: hidden;
+                        }
+                    }
+                    // a {
+                    //     text-decoration: none;
+                    //     color:rgb(0,0,128);
+                    //     font-size: 14px;
+                    //     font-weight: bold;
+                    //     li {
+                    //         height: 28px;
+                    //         margin: 0 5px;
+                    //     }
+                    //     li:hover {
+                    //         color: white;
+                    //     }
+                    // }
                 }
             }
     }
@@ -150,6 +185,11 @@ body {
                 .phone {
                     margin-left: 30px;
                 }
+                ul {
+                    a {
+                        font-size: 18px;
+                    }
+                }
             }
             div:not(:first-child) {
                 display: none;
@@ -170,6 +210,15 @@ body {
 
 @media screen and (min-width: 767px) {
     body {
+        .navigation-top {
+            div {
+                ul {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
         .photo1 {
             opacity: 0.8;
             p {
