@@ -16,12 +16,14 @@ $(document).ready( function() {
     $(".fas.fa-angle-down").on("click", function() {
         $(this).hide(300);
         $(".fas.fa-angle-up").show(300);
-        $(".nsk").show();
+        $(".other_language").show();
+        $(".overlay").show();
     });
 
     $(".fas.fa-angle-up").on("click", function() {
         $(this).hide(300);
         $(".fas.fa-angle-down").show(300);
-        $(".nsk").hide(300);
+        $(".other_language").hide(300);
+        $(".overlay").hide();
     });
 });
