@@ -8,6 +8,7 @@ body {
         height: 50px;
         background-color: #00aeef;
         display: flex;
+        top: 0;
             div {
                 display: flex;
                 width: 100%;
@@ -100,11 +101,13 @@ body {
         position: fixed;
         z-index: 10;
         width: 100%;
+        top: 0;
     }
     .photo1 {
         background-image: url("../assets/photos/medical1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        display: none;
         background-attachment: fixed;
         background-position: center;
         height: 95vh;
@@ -195,6 +198,7 @@ body {
             }
         }
         .photo1 {
+            display: block;
             background-position: center;
         }
         .services {
