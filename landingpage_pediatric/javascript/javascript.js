@@ -12,7 +12,6 @@ $(document).ready( function() {
         }
     });
 
-    // based polish version
     $(".fas.fa-angle-down").on("click", function() {
         $(this).hide(300);
         $(".fas.fa-angle-up").show(300);
@@ -25,5 +24,12 @@ $(document).ready( function() {
         $(".fas.fa-angle-down").show(300);
         $(".other_language").hide(300);
         $(".overlay").hide();
+    });
+
+    $(".overlay_if_scrolled").on("click", function() {
+        $(this).hide(300);
+        $(".fas.fa-angle-up").css("display","none");
+        $(".fas.fa-angle-down").css("display","block");
+        $(".other_language").hide(300);
     });
 });
