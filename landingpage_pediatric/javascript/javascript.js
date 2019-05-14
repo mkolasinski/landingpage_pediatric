@@ -1,5 +1,5 @@
 $(document).ready( function() {
-    window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-128515459-1');
@@ -31,5 +31,9 @@ $(document).ready( function() {
         $(".fas.fa-angle-up").css("display","none");
         $(".fas.fa-angle-down").css("display","block");
         $(".other_language").hide(300);
+    });
+
+    $(".far.fa-times-circle").on("click", function() {
+        $(".cookies").hide(500);
     });
 });
