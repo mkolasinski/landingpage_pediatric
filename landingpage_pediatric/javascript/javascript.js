@@ -34,6 +34,21 @@ window.dataLayer = window.dataLayer || [];
     });
 
     $(".far.fa-times-circle").on("click", function() {
-        $(".cookies").hide(500);
+        $(".cookies").fadeOut(500);
+    });
+
+    $(".cookies p").on("click", function() {
+        $(".policy").fadeIn(400);
+        $(".overlay").show().css("top","0px").css("z-index","10");
+    });
+
+    $(".fas.fa-window-close").on("click", function() {
+        $(".policy").fadeOut(400);
+        $(".overlay").fadeOut();
+    });
+
+    $(".overlay").on("click", function() {
+        $(".policy").fadeOut(400);
+        $(".overlay").fadeOut(400);
     });
 });
